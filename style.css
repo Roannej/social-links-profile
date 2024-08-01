@@ -1,0 +1,99 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background-color: hsl(0, 0%, 8%);
+    font-family: "Inter-VariableFont_slnt\,wght", sans-serif;
+}
+
+.container {
+    width: 30%;
+    height: auto;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 7px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    padding: 8% 8%;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 7px;
+}
+
+#profile {
+    width: 25%;
+    border-radius: 50%;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+h1 {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 8% 0 0;
+    padding: 0;
+}
+
+h2 {
+    color: hsl(75, 94%, 57%);
+    font-size: 11px;
+    font-weight: 600;
+    margin: 2.5% 0 0;
+    padding: 0;
+}
+
+span {
+    color: white;
+    opacity: 0.8;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8% 0 5%;
+}
+
+.grid-item.grey {
+    background-color: hsl(0, 0%, 20%);
+    margin: 3% 0;
+    border-radius: 7px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    display: flex;
+    position: relative;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    justify-content: center; 
+    flex-direction: column; 
+    gap: 2px; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.attribution p {
+    padding: 5%;
+    width: 100%;
+}
