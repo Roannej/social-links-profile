@@ -11,18 +11,19 @@ body {
 }
 
 .container {
-    width: 30%;
+    width: 26%;
     height: auto;
     background-color: hsl(0, 0%, 12%);
-    border-radius: 7px;
+    border-radius: 10px;
     text-align: center;
+    margin: 3%;
 }
 
 .grid-container {
     display: grid;
-    padding: 8% 8%;
+    padding: 8% 10%;
     background-color: hsl(0, 0%, 12%);
-    border-radius: 7px;
+    border-radius: 10px;
 }
 
 #profile {
@@ -54,7 +55,7 @@ h2 {
 
 span {
     color: white;
-    opacity: 0.8;
+    opacity: 0.7;
     font-size: 14px;
     font-weight: 400;
     padding: 8% 0 5%;
@@ -64,6 +65,13 @@ span {
     background-color: hsl(0, 0%, 20%);
     margin: 3% 0;
     border-radius: 7px;
+    cursor: pointer;
+}
+
+.grid-item.grey:hover,
+.grid-item.grey:hover p {
+    background-color: hsl(75, 94%, 57%);
+    color: black;
 }
 
 a {
@@ -76,17 +84,12 @@ p {
     font-weight: 600;
 }
 
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
+#attribution { 
+    color: white;
     display: flex;
-    position: relative;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    justify-content: center; 
-    flex-direction: column; 
-    gap: 2px; 
+    flex-direction: column;
+    margin: 10px;
+    text-align: center;
 }
 
 .attribution a { 
@@ -94,6 +97,49 @@ p {
 }
 
 .attribution p {
-    padding: 5%;
-    width: 100%;
+    padding: 5px 20px;
+    margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    span {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 853px) {
+    #profile {
+        width: 27%;
+    }
+
+    .container {
+        width: 35%;
+    }
+
+    span {
+        font-size: 11px;
+    }
+
+    .attribution p {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #profile {
+        width: 30%;
+    }
+
+    .container {
+        width: 85%;
+    }
+
+    span {
+        font-size: 11px;
+    }
+    
+    .attribution p {
+        font-size: 11px;
+    }
+    
 }
